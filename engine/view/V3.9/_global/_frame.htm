@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>{SITE.TITLE}:::{subject}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="Subject" content="{SITE.DOMAIN}" />
+<meta name="verify-v1" content="c7qPZTfB1pUMtQBmsxdVRpF2Rn4M5+mypsJhQ1yQds4=" />
+<meta name="Author" content="{SITE.NAME}" />
+<meta name="Publisher" content="{DOMAIN}" />
+<meta name="Other Agent" content="{SITE.EMAIL}" />
+<meta name="keywords" content="{SITE.KEYWORDS}" />
+<!--link rel="shortcut icon" href="{IMAGES}/common/favicon.ico" type="image/x-icon" /-->
+<!--link rel="icon" href="{IMAGES}/common/favicon.ico" type="image/x-icon" /-->
+
+<link rel="stylesheet" type="text/css" href="{CSS}/_global/default.css" />
+<link rel="stylesheet" type="text/css" href="{CSS}/_global/popup.css" />
+<link rel="stylesheet" type="text/css" href="{CSS}/_global/_common.css" />
+<link type="text/css" rel="stylesheet" href="{CSS}/{MODULE}.css" />
+<script type="text/javascript" src="{EXTENDS}/js.jquery/jquery.js"></script>
+<script type="text/javascript" src="{EXTENDS}/js.jquery.ui/jquery-ui-1.8.13.custom.min.js"></script>
+<script src="{EXTENDS}/js.jquery.masonry/jquery.masonry.min.js"></script>
+<script src="http://masonry.desandro.com/js/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript" src="{JS}/{MODULE}.js"></script>
+<script type="text/javascript" src="{JS}/_global/common.js"></script>
+<script type="text/javascript" src="{JS}/_global/item.js"></script>
+<script type="text/javascript" src="{JS}/_global/layout.js"></script>
+<script type="text/javascript" src="{JS}/_global/login.js"></script>
+<script type="text/javascript" src="{JS}/_global/validation.js"></script>
+<script type="text/javascript" src="{JS}/_global/jquery.init.js"></script>
+<script type="text/javascript" src="{JS}/_global/context.js"></script>
+<script type="text/javascript" src="{JS}/_global/api.js"></script>
+<script type="text/javascript">
+var DOMAIN = "{DOMAIN}";
+var DOMAIN_FILE = "{DOMAIN_FILE}/fassion/";
+var MOUDLE = "{MODULE}";
+var TODO = "{TODO}";
+var REQUEST_URI = "{REQUEST_URI}";
+var IMAGES = "{IMAGES}";
+var USER = "{_SESSION.userno}";
+</script>
+<!-- 구글 log 스크립트 -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5555634-2']);
+  _gaq.push(['_setDomainName', 'revu.co.kr']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- 구글 log 스크립트 /-->
+</head>
+<body>
+<div id="dialog"></div><!-- jQuery plugin dialog 알림용-->
+<div id="dialog2"></div><!-- jQuery plugin dialog 알림용-->
+<div id="dialog-modal"></div><!-- jQuery plugin dialog 알림용-->
+<div id="progressbar"></div>
+<div id="popuplayer"></div>
+<div id="bglayer"></div><!-- 모달 백그라운드 용-->
+<div id="context-user"></div>
+<div id="helplayer"></div>
+
+
+<div id="header">{# top}</div>	
+<div id="container">{# mframe}</div>	
+
+<div id="loginlayer">{# loginlayer}</div>
+{# etcscript}
+</body>
+</html>

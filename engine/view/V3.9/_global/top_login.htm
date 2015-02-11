@@ -1,0 +1,93 @@
+<script type="text/javascript" src="http://www.fassion.co.kr/js/_global/item.js"></script>
+<script>
+$(document).ready( function() {
+	common.setLayer("addItem_parent");
+	common.setLayer("addItem");
+	common.setLayer("addItemDirected");
+});
+
+function addItemByItself(){   
+	$("#addItem_parent").hide();	
+	common.openCenterLayer('addItemDirected',-1,-1,100);	
+}
+function additemByUrl(){
+    //common.closeLayer('addItem_parent');	
+	$("#addItem_parent").hide();	
+	common.openCenterLayer('addItem',-1,-1,100	);
+}
+
+function additem() {
+		var url = "/common/context.item.add.proc";
+		var targetURL = encodeURIComponent($('#crawll_url').val());
+		var data = "&url="+targetURL;		
+		$.ajax({ type: "POST", url: url, data: data, success: additemRequest });
+		$('#dialog-modal').dialog({ autoOpen: true });
+	}
+
+function additemRequest(data){
+alert(data);
+		//document.write(data);
+		$('#dialog-modal').dialog("close");	
+		var result = $.parseJSON(data);
+		var html = "";
+	    var src = "";
+		var divimgTxt=''; // 반복 이미지 html문 저장용 변수
+		var swidth = 0; // 이미지 임시 넓이
+        var sheight = 0; // 이미지 임시 높이
+		var thumbsize = 200; // 썸네일 제한 사이즈 
+		var crallingsize = 89; // (크롤링)검색 제한 사이즈
+//		alert(result.imgList.length);
+//		alert(result.price.length);
+
+		if(result.result != "success") {
+			$('#dialog').html("Occured error");
+			$('#dialog').dialog({ autoOpen: true, width: "300", height:"150", title: "Parsing of dom Failed" });
+		} else {
+			//@-->** Image resizing Start *//
+			for(var i=0; i<result.imgList.length; i++) {
+				src = result.imgList[i][0]; 
+				swidth = result.imgList[i][1]; 
+				sheight = result.imgList[i][2];
+
+					if(swidth > crallingsize && sheight > crallingsize  && src.indexOf("gnb") < 0 ){			
+								if(swidth >= sheight) {
+										if(swidth > thumbsize) {
+											sratio = Math.round((thumbsize / swidth) * 100);
+											nwidth = Math.round(swidth * sratio / 100);
+											nheight = Math.round(sheight * sratio / 100);										
+											divimgTxt = divimgTxt+"<img src='"+src+"' width='"+nwidth+"' height='"+nheight+"'/>";
+									   } else {
+											divimgTxt = divimgTxt+"<img src='"+src+"' />";
+									   }
+								 } else {
+									 if(sheight > thumbsize) {
+										sratio = Math.round((thumbsize / sheight) * 100);
+										nwidth = Math.round(swidth * sratio / 100);
+										nheight = Math.round(sheight * sratio / 100); 									
+										divimgTxt = divimgTxt+"<img src='"+src+"' width='"+nwidth+"' height='"+nheight+"'/>";
+									   } else {
+										divimgTxt = divimgTxt+"<img src='"+src+"' />";	
+									   }
+								}								
+					}
+					
+			 }
+			//@-->** Image resizing End *//
+			common.openCenterLayer("parsedImgList",-1,-1,100);				
+			$('#parsedImgList').html(divimgTxt);
+		}
+}
+
+</script>
+<!-- top 메뉴영역 시작 -->
+<div class="inner">
+		<h1 class="tit-type"><a href="/">FASSION Fashion is passion</a></h1>
+		<div class="util-menu">
+			<a href="#none" class="category">패션 카테고리</a>
+			<a href="#none" class="collection">인기아이템/컬렉션</a>
+			<a href="#none" class="brandShopping">브랜드&frasl;쇼핑</a>
+			<a href="#none" class="search">검색</a>
+			<a href="javascript:common.openCenterLayer('addItem_parent',-1,-1,100)" class="addItem">Add Item</a> 
+		</div>
+	</div><!--inner//-->
+<!-- top 메뉴영역 끝 -->

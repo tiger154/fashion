@@ -1,0 +1,259 @@
+body {background-color:#f1f4f6;}
+/*cont-layout*/
+	.sectionBox {
+		float:left;
+		width:842px;
+		padding-top:36px;
+		padding-left:220px;
+	}
+	.sectionBox .section-title {
+		height:30px;
+	}
+	.sectionCont {
+		width:571px;
+	}
+	#itemBox-add .sectionCont .buttonBox {
+		margin-top:18px;
+		padding-bottom:29px;
+		text-align:left;
+		border-bottom:1px solid #c1cad1;
+	}
+	.sectionCont p {
+		text-indent:-9999px;
+		background-image:url('/images/common/_layout/sprites-layout_130111.png');
+	}
+/*itemBox-add*/
+	#comm-cont.itemContainer {
+		background:url('/images/common/_bg/bg_item_130111.gif') no-repeat 0 0;
+	}
+	#itemBox-add .section-title {
+		width:136px;
+		background-position:0 -600px;
+	}
+	#itemBox-add #itemBox-cont {
+		margin-top:47px;
+	}
+	#itemBox-add #itemBox-cont .section-title {
+		width:476px;
+		height:41px;
+		margin-bottom:36px;
+		background-position:-200px -600px;
+	}
+	#itemBox-add #itemBox-cont p.itemIntro {
+		width:200px;
+		height:40px;
+		background-position:-700px -600px;
+	}
+	#itemBox-add #itemBox-cont p.bookmark {
+		width:387px;
+		height:13px;
+		margin-bottom:19px;
+		background-position:-600px -71px;
+	}
+	#itemBox-cont .buttonBox .button {
+		width:92px;
+		height:37px;
+	}
+	#itemBox-cont .buttonBox .register {
+		background-position:0 -160px;
+	}
+	#itemBox-cont .buttonBox .register-url {
+		background-position:-100px -160px;
+	}
+	#itemBox-cont .buttonBox .register-facebook {
+		width:147px;
+		background-position:-200px -160px;
+	}
+	#itemBox-cont .bookmark {
+		padding-top:34px;
+		border-top:1px solid #fff;
+	}
+	#itemBox-cont .button.btn-bookmark {
+		width:117px;
+		height:37px;
+		background-position:-360px -160px;
+	}
+/*join*/
+
+	#joinBox .section-title {
+		width:110px;
+		background-position:-800px -300px;
+	}
+	#join-cont {
+		*zoon:1;
+		width:843px;
+		padding:18px 0 19px;
+		border-bottom:1px solid #c2ced9;
+	}
+	#join-cont:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+	}
+	#join-cont dt,
+	#join-cont dd {
+		float:left;
+		line-height:37px;
+	}
+	#join-cont dt {
+		width:102px;
+		color:#242635;
+		font-weight:bold;
+	}
+	#join-cont dd {
+		width:741px;
+		color:#8593a0;
+	}
+	#join-cont dd#upload-image .button {
+		width:146px;
+		height:29px;
+		background-position:-100px -600px;
+	}
+	#join-cont dd#upload-image .button:first-child {
+		width:93px;
+		background-position:0 -600px;
+	}
+	#join-cont dd input[type="text"] {
+		width:291px;
+		height:26px;
+		color:#8593a0;
+	}
+	#join-cont dd .button {
+		vertical-align:middle;
+	}
+	#join-cont dd span.check {
+		padding-left:29px;
+		color:#242635;
+		font-family:Gulim;
+		background:url(/images/common/_ico/sprites-icon_130111.png) no-repeat 7px -500px;
+	}
+	#join-cont dd#account-conn .button {
+		width:73px;
+		height:29px;
+		background-position:-250px -600px;
+	}
+	#join-cont dd#timeLine .button {
+		width:44px;
+		height:21px;
+		background-position:-42px -650px;
+	}
+	#join-cont dd#timeLine .button:first-child {
+		width:43px;
+		background-position:-100px -650px;
+	}
+	#join-cont dd#timeLine .button.on {
+		background-position:0 -650px;
+	}
+	#join-cont dd#timeLine .button.off {
+		background-position:-143px -650px;
+	}
+	#join-cont dd#connect-twit .button {
+		width:73px;
+		height:29px;
+		background-position:-330px -600px;
+	}
+	#join-cont dd#introduce {
+		padding-top:4px;
+	}
+	#join-cont dd#introduce textarea {
+		width:490px;
+		height:130px;
+	}
+	#joinBox .buttonBox {
+		padding-top:49px;
+		border-top:1px solid #fff;
+	}
+	#joinBox .buttonBox .joinChg {
+		width:107px;
+		height:37px;
+		background-position:-570px -260px;
+	}
+
+/*thumbFile*/
+	#container .thumbFile {
+		position:absolute;
+		top:30px;
+		left:20px;
+		border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+	}
+/*bookBox*/
+	#bookBox .section-title {
+		width:100px;
+		background-position:0 -650px;
+	}
+	#bookCont {
+		margin-top:37px;
+	}
+	#bookCont.sectionCont .section-title {
+		width:257px;
+		height:41px;
+		margin-bottom:26px;
+		background-position:-200px -650px;
+	}
+	.itemIntro {
+		width:347px;
+		height:38px;
+		background-position:-500px -650px;
+	}
+	.dragBox {
+		*zoom:1;
+		width:339px;
+		height:37px;
+		margin-top:17px;
+		margin-bottom:63px;
+		padding:6px 7px;
+		background:url('/images/common/_bg/bg_drag_130111.gif') no-repeat 0 0;
+	}
+	.dragBox:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+	}
+	.dragBox span,
+	.dragBox p {
+		float:left;
+	}
+	.dragBox span {
+		display:block;
+		cursor:pointer;
+		width:92px;
+		height:38px;
+		margin-right:15px;
+		text-indent:-9999px;
+		background:url('/images/common/_layout/sprites-button_130111.png') no-repeat -200px -260px;
+	}
+	.dragBox p {
+		width:222px;
+		height:13px;
+		margin-top:12px;
+		background-position:-800px -200px;
+	}
+	.fassion-button dt,
+	.fassion-button dd {
+		width:571px;
+	}
+	.fassion-button dt {
+		height:13px;
+		padding-bottom:12px;
+		text-indent:-9999px;
+		border-bottom:1px solid #c1cad1;
+		background:url(/images/common/_layout/sprites-layout_130111.png) no-repeat -500px -700px;
+	}
+	.fassion-button dd {
+		padding-top:13px;
+	}
+	.fassion-button dd > ul {
+		width:481px;
+		height:62px;
+		text-indent:-9999px;
+		border-top:1px solid #fff;
+		background:url('/images/common/_layout/sprites-layout_130111.png') no-repeat 0 -700px;
+	}

@@ -1,0 +1,366 @@
+
+/*popup*/
+	.layerPop {
+		position:absolute;
+		z-index:1;
+		padding:19px 7px 7px 7px;
+		border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+		background-color:#8593a0;
+	}
+	.layerPop .close {
+		position:absolute;
+		top:13px;
+		right:16px;
+		width:28px;
+		height:29px;
+		background-position:-210px -5px;
+	}
+	.layerPop .section-title {
+		height:16px;
+		margin-left:15px;
+		padding-bottom:17px;
+	}
+	.layerPop #popInner {
+		width:425px;
+		padding:20px 15px 0 15px;
+		background-color:#f7f7f8;
+	}
+	.layerPop #popInner > dl {
+		width:425px;
+	}
+	.layerPop #popInner > dl:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+	}
+	.layerPop #popInner > dl > dt {
+		width:85px;
+		line-height:28px;
+		color:#38424b;
+		font-weight:bold;
+		letter-spacing:-1px;
+	}
+	.layerPop #popInner > dl > dd {
+		width:340px;
+	}
+	.layerPop #popInner > dl > dt,
+	.layerPop #popInner > dl > dd {
+		float:left;
+		padding-bottom:8px;
+	}
+	.layerPop #popInner input[type="text"] {
+		width:331px;
+		height:24px;
+		color:#8593a0;
+	}
+	.layerPop #popInner textarea {
+		width:324px;
+		height:120px;
+		color:#8593a0;
+	}
+	.layerPop .clear .select-list-box {
+		width:136px;
+	}
+	.layerPop .buttonBox {
+		height:29px;
+		padding:15px 0;
+		border-top:1px solid #d5d9dd;
+	}
+	.layerPop .cate-make dl dd.file-intro p {
+		padding:16px 0 8px;
+		color:#8593a0;
+		font-weight:bold;
+	}
+	.layerPop .cate-make p.item-select {
+		padding:6px 0 9px 9px;
+		color:#8593a0;
+	}
+	/*collection*/
+		#collectionPop,
+		#collection-delPop {
+			width:455px;
+		}
+		#collection .layerPop {
+			display:none;
+		}
+		#collectionPop .section-title,
+		#collection-delPop .section-title {
+			width:98px;
+			background-position:-900px 0;
+		}
+		#collectionPop .privateChange .select-list-box {
+			float:left;
+			margin:0 5px 5px 0;
+		}
+		#collectionPop .privateChange .cateAdd.button {
+			width:95px;
+			height:28px;
+			background-position:-110px -100px;
+		}
+		#collectionPop .privateChange .buttonBox .button {
+			height:29px;
+		}
+		#collectionPop .privateChange .buttonBox .button.collDel {
+			width:83px;
+			background-position:-210px -100px;
+		}
+		#collection-delPop .privateDel .txt-del {
+			padding:14px 0 26px 0;
+			font-size:17px;
+			font-weight:bold;
+			line-height:31px;
+			color:#38424b;
+			text-align:center;
+		}
+		#collection-delPop .privateDel .del-info {
+			border-top:1px solid #d5d9dd;
+		}
+		#collection-delPop .privateDel .del-info {
+			padding-top:13px;
+			text-align:center;
+			color:#8593a0;
+		}
+		#collection-delPop .privateDel .del-info span {
+			color:#cc0000;
+		}
+		#collection-delPop .privateDel .buttonBox {
+			padding:32px 0 25px 0;
+			border-top:0;
+		}
+		#collection-delPop .privateDel .button.btnDel {
+			width:127px;
+			height:29px;
+			background-position:-300px -100px;
+		}
+	/*itemPop*/
+		#itemPop-find,
+		#itemPop {
+			width:455px
+		}
+			#itemPop .section-title,
+			#itemPop-find .section-title {
+				width:127px;
+				background-position:-600px -150px;
+			}
+			#itemPop-find #popInner > p {
+				padding:31px 0 46px;
+				font-size:17px;
+				font-weight:bold;
+				text-align:center;
+				letter-spacing:-2px;
+				color:#38424b;
+				border-bottom:1px solid #d5d9dd;
+			}
+			#itemPop #popInner > dl {
+				padding-bottom:10px;
+			}
+			.buttonBox .button.itemMake {
+				width:107px;
+				height:29px;
+				background-position:-200px -50px;
+			}
+			#popInner > dl #collection-select .selectBox {
+				position:relative;
+			}
+			#popInner > dl #collection-select .selectBox > p {
+				height:26px;
+				padding-left:8px;
+				line-height:26px;
+				color:#8593a0;
+				cursor:pointer;
+				border:1px solid #bfc5ca;
+				background:#fff url(/images/common/_ico/sprites-icon_130111.png) no-repeat right -491px;
+			}
+			#popInner > dl #collection-select .selectBox > ul {
+				position:absolute;
+				top:27px;
+				left:0;
+				z-index:1;
+				width:330px;
+				height:200px;
+				overflow-y:auto;
+				padding:4px 0 9px 8px;
+				border:1px solid #8593a0;
+				background-color:#fff;
+			}
+			#popInner > dl #collection-select .selectBox > ul li {
+				line-height:22px;
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+			}
+			#popInner > dl #collection-select .selectBox > ul li a {
+				color:#8593a0;
+			}
+			#popInner > dl .category-make input[type="text"] {
+				width:238px;
+				height:19px;
+			}
+			#popInner  > dl .category-make button {
+				width:61px;
+				height:23px;
+				margin-left:-1px;
+				line-height:23px;
+				color:#fff;
+				font-family:Gulim;
+				border:none;
+				background-color:#8593a0;
+			}
+	/*urlsitePop*/
+		#make-sitePop .section-title,
+		#sitePop .section-title,
+		#urlsitePop .section-title {
+			width:205px;
+			background-position:-770px -150px;
+		}
+		.register-site > p {
+			padding-bottom:18px;
+			color:#8593a0;
+			text-align:center;
+			font-weight:bold;
+			line-height:24px;
+		}
+		#sitePop.layerPop .register-site dt {
+			width:35px;
+		}
+		#sitePop.layerPop .register-site dd input[type="text"] {
+			width:381px;
+		}
+		.layerPop .register-site dd {
+			width:390px;
+		}
+		.layerPop .buttonBox {
+			margin-top:22px;
+		}
+		.layerPop .buttonBox .button.itemTake {
+			width:117px;
+			height:29px;
+			background-position:-309px -50px;
+		}
+		#popInner.imgRegister {
+			width:624px;
+		}
+		#popInner.imgRegister p {
+			color:#8593a0;
+			font-weight:bold;
+		}
+		#popInner.imgRegister p.txt-source {
+			font-weight:normal;
+		}
+		#popInner.imgRegister p.txt-source span {
+			color:#c00;
+		}
+		#webImgList {
+			margin-top:19px;
+			padding-bottom:10px;
+		}
+		#webImgList div {
+			width:120px;
+			height:120px;
+			overflow:hidden;
+			margin-right:6px;
+			margin-bottom:5px;
+			background-color:#e0e4e7;
+		}
+		#webImgList div span.size {
+			width:120px;
+		}
+		#webImgList div span.btn-register {
+			width:120px;
+			height:120px;
+			background:url(/images/common/_layout/sprites-button_130111.png) repeat-x 0 -258px;
+		}
+	/*bookmarklet-popup*/
+		#bookmarkPop .section-title {
+			width:97px;
+			background-position:-700px -5px;
+		}
+		#bookmarkPop .sources-intro {
+			padding-top:42px;
+		}
+	/*bookitemPop*/
+		#bookitemPop {
+			width:100%;
+			height:100%;
+			padding:0;
+			border-radius:0;
+			background-color:#f7f7f8 ;
+		}
+		#bookitemPop #item-make {
+			width:1053px;
+			margin:0 auto;
+			padding:40px 87px 0 90px;
+		}
+		#bookitemPop #item-make a {
+			width:198px;
+			height:198px;
+			margin-right:13px;
+			margin-bottom:11px;
+			border:1px solid #bfc5ca;
+			background-color:#eceef0;
+		}
+		#bookitemPop #item-make a img {
+			width:198px;
+			height:198px;
+			max-width:198px;
+		}
+		#bookitemPop #item-make .size {
+			width:198px;
+		}
+		#bookitemPop #item-make a span.btn-register {
+			width:200px;
+			height:200px;
+			background:url(/images/common/_layout/sprites-button_130111.png) repeat-x -360px -260px;
+		}
+		#bookitemPop .title {
+			text-align:center;
+		}
+		#bookitemPop.layerPop .close {
+			position:absolute;
+			top:0px;
+			right:0px;
+			width:81px;
+			height:75px;
+			background-position:0 -400px;
+		}
+
+/*register-image*/
+	.register-image {
+		*zoom:1;
+	}
+	.register-image:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+	}
+	.register-image div {
+		position:relative;
+		float:left;
+	}
+	.register-image .right {
+		margin-right:0 !important;
+	}
+	.register-image span.size {
+		position:absolute;
+		left:0;
+		bottom:0px;
+		height:19px;
+		line-height:19px;
+		text-align:center;
+		color:#fff;
+		background:url(/images/common/_bg/bg_register_130111.png) repeat-x 0 0;
+	}
+	.register-image span.btn-register {
+		position:absolute;
+		left:0;
+		top:0px;
+		text-indent:-9999px;
+	}

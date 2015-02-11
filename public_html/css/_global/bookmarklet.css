@@ -1,0 +1,209 @@
+
+/*bookmarklet*/
+	#_shim {
+		z-index:2147483640
+		position: absolute
+		background: transparent
+		top:0
+		right:0
+		bottom:0
+		left:0
+		width: 100%
+		border: 0;
+	}
+	#_bg {
+		z-index:2147483641
+		position: absolute
+		top:0
+		right:0
+		bottom:0
+		left:0
+		background-color:#f2f2f2
+		opacity:.95
+		width: 100%
+	}
+	#_bd {
+		z-index:2147483642
+		position: absolute
+		text-align: center
+		width: 100%
+		top: 0
+		left: 0
+		right: 0
+		font:16px hevetica neue,arial,san-serif
+	}
+	#_bd #_hd {
+		z-index:2147483643
+		-moz-box-shadow: 0 1px 2px #aaa
+		-webkit-box-shadow: 0 1px 2px #aaa
+		box-shadow: 0 1px 2px #aaa
+		position: fixed
+		*position:absolute
+		width:100%
+		top: 0
+		left: 0
+		right: 0
+		height: 45px
+		line-height: 45px
+		font-size: 14px
+		font-weight: bold
+		display: block
+		margin: 0
+		background: #fbf7f7
+		border-bottom: 1px solid #aaa
+	}
+	#_bd #_hd.noHeader {
+		height: 1px
+		background-color:#f2f2f2
+		-moz-box-shadow: none
+		-webkit-box-shadow: none
+		box-shadow: none
+		border: none
+	}
+	#_bd #_hd a#_x {
+		display: inline-block
+		cursor: pointer
+		color: #524D4D
+		line-height: 45px
+		text-shadow: 0 1px #fff
+		float: right
+		text-align: center
+		width: 100px
+		border-left: 1px solid #aaa
+	}
+	#_bd #_hd a#_x:hover {
+		color: #524D4D
+		background: #e1dfdf
+		text-decoration: none
+	}
+	#_bd #_hd a#_x:active {
+		color: #fff
+		background: #cb2027
+		text-decoration: none
+		text-shadow:none;
+	}
+	#_bd #_hd #_logo {
+		height: 43px
+		width: 100px
+		display: inline-block
+		margin-right: -100px
+		background:#596978 url(../img/sprites-layout.png) 50% 50% no-repeat
+		border: none;}
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		#_bd #_hd #_logo {
+			background-size: 100px 26px
+			background-image: url(_cdn/images/LogoRed.2x.png)
+	}
+	#_bd #_spacer {
+		display: block
+		height: 50px
+	}
+	#_bd span._pinContainer {
+		height:200px
+		width:200px
+		display:inline-block
+		background:#fff
+		position:relative
+		-moz-box-shadow:0 0  2px #555
+		-webkit-box-shadow: 0 0  2px #555
+		box-shadow: 0 0  2px #555
+		margin: 10px
+	}
+	#_bd span._pinContainer {
+		zoom:1
+		*border: 1px solid #aaa
+	}
+	#_bd span._pinContainer img {
+		margin:0
+		padding:0
+		border:none
+	}
+	#_bd span._pinContainer span.img, #_bd span._pinContainer span._play {
+		position: absolute
+		top: 0
+		left: 0
+		height:200px
+		width:200px
+		overflow:hidden
+	}
+	#_bd span._pinContainer span._play {
+		background: transparent url(_cdn/images/bm/play.png) 50% 50% no-repeat
+	}
+	#_bd span._pinContainer cite, #_bd span._pinContainer cite span {
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 200px
+		color: #000
+		height: 22px
+		line-height: 24px
+		font-size: 10px
+		font-style: normal
+		text-align: center
+		overflow: hidden
+	}
+	#_bd span._pinContainer cite span._mask {
+		background:#eee
+		opacity:.75
+		*filter:alpha(opacity=75)
+	}
+	#_bd span._pinContainer cite span._behance {
+		background: transparent url(_cdn/images/attrib/behance.png) 180px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._flickr {
+		background: transparent url(_cdn/images/attrib/flickr.png) 182px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._fivehundredpx {
+		background: transparent url(_cdn/images/attrib/fivehundredpx.png) 180px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._kickstarter {
+		background: transparent url(_cdn/images/attrib/kickstarter.png) 182px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._slideshare {
+		background: transparent url(_cdn/images/attrib/slideshare.png) 182px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._soundcloud {
+		background: transparent url(_cdn/images/attrib/soundcloud.png) 182px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._vimeo {
+		background: transparent url(_cdn/images/attrib/vimeo.png) 180px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._vimeo_s {
+		background: transparent url(_cdn/images/attrib/vimeo.png) 180px 3px no-repeat
+	}
+	#_bd span._pinContainer cite span._youtube {
+		background: transparent url(_cdn/images/attrib/youtube.png) 180px 3px no-repeat
+	}
+	#_bd span._pinContainer a {
+		text-decoration:none
+		background:transparent url(_cdn/images/bm/button.png) 60px 300px no-repeat
+		cursor:pointer
+		position:absolute
+		top:0
+		left:0
+		height:200px
+		width:200px
+	}
+	#_bd span._pinContainer a {
+		-moz-transition-property: background-color
+		-moz-transition-duration: .25s
+		-webkit-transition-property: background-color
+		-webkit-transition-duration: .25s
+		transition-property: background-color
+		transition-duration: .25s
+	}
+	#_bd span._pinContainer a:hover {
+		background-position: 60px 80px
+		background-color:rgba(0, 0, 0, 0.5)
+	}
+	#_bd span._pinContainer a._hideMe {
+		background: rgba(128, 128, 128, .5)
+		*background: #aaa
+		*filter:alpha(opacity=75)
+		line-height: 200px
+		font-size: 10px
+		color: #fff
+		text-align: center
+		font-weight: normal!important
+	}

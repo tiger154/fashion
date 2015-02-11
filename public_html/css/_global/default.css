@@ -1,0 +1,48 @@
+
+/************************************************
+Author : Hyun ju Lee / isecommerce.co.kr (2012-12)
+*************************************************/
+@charset "utf-8";
+@import url("common.css");
+
+body {margin:0;padding:0;font-size:0.75em;line-height:1.5;font-family:gulim,dotum,Tahoma;color:#888;}
+/* inline */
+img {border:0 none;vertical-align:top;}
+hr {display:none;}
+/* block */
+h1, h2, h3, h4, h5, h6 {margin:0;font-size:1em;}
+address {font-style:normal;}
+blockquote, p {margin:0;}
+pre {margin:0;font-size:1em;}
+/* table */
+table {border-collapse:separate;border-spacing:0;}
+caption {display:none;}
+th, td {padding:0;font-weight:normal;}
+/* list */
+dd, dl, ol, ul {margin:0;padding:0;list-style-type:none;}
+/* form */
+form {margin:0;}
+fieldset {margin:0;padding:0;border:0 none;}
+legend {display:none;}
+input {font-size:1em;}
+input.check, input.radio {width:13px;height:13px;margin:0;padding:0;}
+textarea {margin:0;font-family:Gulim,Tahoma;font-size:1em;}
+select {height:21px;font-size:0.917em;line-height:1;margin:0;font-family:Gulim,Tahoma;color:#676767;}
+/* 버튼 엘리먼트 하위에 이미지 적용 */
+.img-button {padding:0;border:none 0;background:none;cursor:pointer;overflow:visible;font-size:0;line-height:0;}
+.img-button img {display:block;position:relative;}
+/*body.safari .img_button {margin:-1px -3px ;}*/
+.bg-button {margin:0;padding:0;border:none 0;background:none;cursor:pointer;overflow:visible;font-size:1em;line-height:1;background-color:red;}
+.bg-button span {padding:2px 5px 0 !important;white-space:nowrap;}
+button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+.input-wrap a, .input-wrap em, .input-wrap label, .input-wrap span, .input-wrap strong {padding:2px 0 1px;}
+/* basic */
+.hidden-obj {position:absolute;visibility:hidden;top:-9000px;left:-9000px;}
+.display-none {display:none;}
+/* clear */
+.clear:after{content:".";height:0;font-size:0;visibility:hidden;display:block;clear:both;}
+.clear{display:block;*display:inline-block;}
+* html .clear{height:0;}
+.clear-both{clear:both;}
+/*link*/
+a {color:#b1aeb6;text-decoration:none;}
